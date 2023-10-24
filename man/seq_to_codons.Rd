@@ -4,20 +4,20 @@
 \alias{seq_to_codons}
 \title{seq_to_codons}
 \usage{
-seq_to_codons(aa_seq, start = 1)
+seq_to_codons(nucleotide_seq, start = 1)
 }
 \arguments{
-\item{aa_seq}{String/character of amino acid code}
+\item{nucleotide_seq}{String/character of nucleotide sequence}
 
-\item{start}{Position of the first amino acid to part into codons. Default is pos 1, parting the whole sequence into codons.}
+\item{start}{Position of the first nucleotide to part into codons. Default is pos 1, parting the whole sequence into codons.}
 }
 \value{
-Takes a string/character of amino acid code and returns a list of codons in the sequence. You can chose to start the slicing of the sequence after the 1st position, if defining new value for start.
+Takes a string/character of nucleotide sequence and returns a list of codons in the sequence. You can chose to start the slicing of the sequence after the 1st position, if defining new value for start.
 }
 \description{
 seq_to_codons
 }
 \examples{
-aa_seq <- "gaccagatcgataggcggcaatttgaacgctgagaacatcatccggatgtccgctcccgtgtttgtctcagctttgtgcagtcagtgggagggtgttcccaacgactctccgccttttgacttctaaagggttctaggcttccaatcatgtcgccccagcttttccgagaacgatggtattttcggggggggcttcacgttctgtggagaatatcactgtatgtcgatctaggacggcaacttctggaatcaccgattacgtcggcagactgtcatacctgaaacggattccagacgcatagacggcttgcatctggggcggcagaaatatggtcgagactccgacccgagcttgcgggc"
-seq_to_codons(aa_seq)
+nucleotide_seq <- "gaccagatcgataggcggcaatttgaacgctgagaacatcatccggatgtccgctcccgtgtttgtctcagctttgtgcagtcagtgggagggtgttcccaacgactctccgccttttgacttctaaagggttctaggcttccaatcatgtcgccccagcttttccgagaacgatggtattttcggggggggcttcacgttctgtggagaatatcactgtatgtcgatctaggacggcaacttctggaatcaccgattacgtcggcagactgtcatacctgaaacggattccagacgcatagacggcttgcatctggggcggcagaaatatggtcgagactccgacccgagcttgcgggc"
+seq_to_codons(nucleotide_seq)
 }
