@@ -21,6 +21,10 @@ library("dogma7")
 
 # Vignette for package dogma7
 
+<https://github.com/rforbiodatascience23/group_7_package>
+
+<https://github.com/rforbiodatascience23/group07>
+
 **Package Dogma7 is an R package designed for DNA and RNA sequence manipulation. It includes a set of functions to generate, convert, splice, and analyze genetic sequences.**
 
 ## **Function 1:** **`sample_nucleotides(sample_size = 100)`**

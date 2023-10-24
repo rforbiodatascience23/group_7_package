@@ -7,6 +7,10 @@ library("dogma7")
 
 # Vignette for package dogma7
 
+<https://github.com/rforbiodatascience23/group_7_package>
+
+<https://github.com/rforbiodatascience23/group07>
+
 **Package Dogma7 is an R package designed for DNA and RNA sequence
 manipulation. It includes a set of functions to generate, convert,
 splice, and analyze genetic sequences.**
@@ -23,7 +27,7 @@ If no value is specified, sample_size = 100 by default.
 ``` r
 DNA_seq <- sample_nucleotides(100)
 print(DNA_seq)
-#> [1] "CCGATATTACTCCAATTGTTGCGGTACTCGTCTAGTTACGTAAGTATTTGGCTCATACGCCCTCCTCTAAGATAGCCGACTTGCGCCTGTTTCATCACTA"
+#> [1] "AACCCCGTTAAAGGATCTGTAAACAATACTGGACAAGAATCATAGCTAGCATCAGTTATGGTGAGTCGAACAGAGGAATCTTAGAGGTATGCAAGTAAAT"
 ```
 
 ## **Function 2: `thymine_to_uracil(DNA_seq)`**
@@ -37,7 +41,7 @@ sequence by replacing “T” with “U.”
 RNA_seq <- thymine_to_uracil(DNA_seq)
 
 print(RNA_seq)
-#> [1] "CCGAUAUUACUCCAAUUGUUGCGGUACUCGUCUAGUUACGUAAGUAUUUGGCUCAUACGCCCUCCUCUAAGAUAGCCGACUUGCGCCUGUUUCAUCACUA"
+#> [1] "AACCCCGUUAAAGGAUCUGUAAACAAUACUGGACAAGAAUCAUAGCUAGCAUCAGUUAUGGUGAGUCGAACAGAGGAAUCUUAGAGGUAUGCAAGUAAAU"
 ```
 
 ## **F**unction 3: **`seq_to_codons(nucleotide_seq, start = 1)`**
@@ -53,9 +57,9 @@ If no start value is defined, it will be 1 as default.
 codons_list <- seq_to_codons(DNA_seq)
 
 print(codons_list)
-#>  [1] "CCG" "ATA" "TTA" "CTC" "CAA" "TTG" "TTG" "CGG" "TAC" "TCG" "TCT" "AGT"
-#> [13] "TAC" "GTA" "AGT" "ATT" "TGG" "CTC" "ATA" "CGC" "CCT" "CCT" "CTA" "AGA"
-#> [25] "TAG" "CCG" "ACT" "TGC" "GCC" "TGT" "TTC" "ATC" "ACT"
+#>  [1] "AAC" "CCC" "GTT" "AAA" "GGA" "TCT" "GTA" "AAC" "AAT" "ACT" "GGA" "CAA"
+#> [13] "GAA" "TCA" "TAG" "CTA" "GCA" "TCA" "GTT" "ATG" "GTG" "AGT" "CGA" "ACA"
+#> [25] "GAG" "GAA" "TCT" "TAG" "AGG" "TAT" "GCA" "AGT" "AAA"
 ```
 
 ## **Function 4: `amino_acid(codons)`**
@@ -79,7 +83,7 @@ Function parameters:
 amino_acid = translate(codons_list)
 
 print(amino_acid)
-#> [1] "PNANANAQNANARNANANANANANANANANANANARNANANARNAPNANAANANANANA"
+#> [1] "NPNAKGNANANNANAGQENANANAANANANANANARTEENANARNAANAK"
 ```
 
 ## **Function 5:** `barplot_unique_chars(aa_sequence)`
