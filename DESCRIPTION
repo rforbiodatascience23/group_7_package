@@ -1,0 +1,31 @@
+Package: dogma7
+Type: Package
+Title: Create the central dogma of molecular biology group 7
+Version: 0.1.0
+Authors@R:
+  c(person(given = "Caroline",
+           family = "Jensen",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s213427@dtu.dk"), 
+    person(given = "Mette",
+           family = "Bøge",
+           role = "aut",
+           email = "s194679@dtu.dk"), 
+    person(given = "Sarah",
+           family = "Rosenberg",
+           role = "aut",
+           email = "s194689@email.com"), 
+    person(given = "Jaime",
+           family = "Piera",
+           role = "aut",
+           email = "s233773@dtu.dk"), 
+    person(given = "Yassine",
+           family = "Turki",
+           role = "aut",
+           email = "s231735@dtu.dk"))
+Maintainer: The package maintainer <s213427@dtu.dk>
+Description: This is an exercise in a R course to create our first package.
+    The package will create the central dogma of molecular biology.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
